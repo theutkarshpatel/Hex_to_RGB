@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app.css">
+
+  <title>Hex to RGB</title>
+</head>
+
+<body>
+  <div id="container">
+
+    <header>
+      <h1>Hex to RGB converter</h1>
+      <p id="tagline">Enter the hex colour:</p>
+    </header>
+
+    <section id="hexchanger">
+      <div>
+        <input type="text" id="inputhex" maxlength="7" value="" placeholder="e.g.: #FFFFFF">
+      </div>
+
+      <div>
+        <input type="button" value="Convert" id="buttoncolour">
+      </div>
+    </section>
+
+    <section id="hexrgb">
+      <p>Your hex colour converted to RGB is: </p>
+      <p>R: <span id="resultr">-</span>  G: <span id="resultg">-</span>  B: <span id="resultb">-</span></p>
+    </section>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
